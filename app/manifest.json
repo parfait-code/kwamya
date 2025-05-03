@@ -1,0 +1,42 @@
+{
+    "name": "KWAMYA - Agence Web Digital au Cameroun",
+    "short_name": "KWAMYA",
+    "description": "Agence web digital premium basée au Cameroun, spécialisée dans la création de sites web, d'applications mobiles, l'optimisation SEO, le UI/UX design, la maintenance web et le consulting digital.",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/logo.svg",
+        "sizes": "192x192",
+        "type": "image/svg",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "/logo.svg",
+        "sizes": "512x512",
+        "type": "image/svg",
+        "purpose": "any maskable"
+      }
+    ],
+    "theme_color": "#4F46E5",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "orientation": "portrait",
+    "lang": "fr-FR",
+    "dir": "ltr",
+    "prefer_related_applications": false,
+    "categories": ["business", "web development", "digital agency"],
+    "shortcuts": [
+      {
+        "name": "Contacter KWAMYA",
+        "short_name": "Contact",
+        "description": "Contactez notre équipe pour vos projets web",
+        "url": "/#contact"
+      },
+      {
+        "name": "Services",
+        "short_name": "Services",
+        "description": "Découvrez nos services digitaux",
+        "url": "/#services"
+      }
+    ]
+  }

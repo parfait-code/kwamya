@@ -1,0 +1,12 @@
+# robots.txt pour KWAMYA - Agence Web Digital au Cameroun
+User-agent: *
+Allow: /
+Disallow: /api/
+
+# Sitemap
+Sitemap: https://kwamya.flashinfos237.com/sitemap.xml
+
+# Adresse de l'agence pour les robots de recherche locale
+# KWAMYA
+# Yaoundé, Cameroun
+# kwamya@gmail.com
