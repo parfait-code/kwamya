@@ -338,6 +338,28 @@ const Services = () => {
   );
 };
 
+// Définition d'un type spécifique pour les variants Framer Motion
+type MotionVariants = {
+  hidden?: {
+    opacity?: number;
+    y?: number;
+    x?: number;
+    scale?: number;
+  };
+  visible?: {
+    opacity?: number;
+    y?: number;
+    x?: number;
+    scale?: number;
+    transition?: {
+      duration?: number;
+      delay?: number;
+      ease?: string;
+      type?: string;
+    };
+  };
+};
+
 const ServiceCard = ({ 
   icon, 
   title, 
@@ -347,7 +369,7 @@ const ServiceCard = ({
   icon: React.ReactNode; 
   title: string; 
   description: string; 
-  variants: Record<string, any>;
+  variants: MotionVariants;
 }) => {
   return (
     <motion.div
@@ -853,6 +875,28 @@ const Portfolio = () => {
   );
 };
 
+// Définition d'un type spécifique pour les variants Framer Motion
+type MotionVariantsPortFolio = {
+  hidden?: {
+    opacity?: number;
+    y?: number;
+    x?: number;
+    scale?: number;
+  };
+  visible?: {
+    opacity?: number;
+    y?: number;
+    x?: number;
+    scale?: number;
+    transition?: {
+      duration?: number;
+      delay?: number;
+      ease?: string;
+      type?: string;
+    };
+  };
+};
+
 const PortfolioCard = ({ 
   image, 
   title, 
@@ -866,7 +910,7 @@ const PortfolioCard = ({
   category: string;
   description: string;
   demoLink: string;
-  variants: Record<string, any>
+  variants: MotionVariantsPortFolio;
 }) => {
   return (
     <motion.div
@@ -931,7 +975,7 @@ const PortfolioCard = ({
       </div>
     </motion.div>
   );
-};
+}
 
 const Footer = () => {
   return (
