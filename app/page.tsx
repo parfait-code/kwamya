@@ -1051,16 +1051,16 @@ const Footer = () => {
   );
 };
 
-export const FooterLink = ({ text }: { text: string }) => (
-  <li>
-    <Link 
-      href="#" 
-      className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
-    >
-      {text}
-    </Link>
-  </li>
-);
+//  const FooterLink = ({ text }: { text: string }) => (
+//   <li>
+//     <Link 
+//       href="#" 
+//       className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
+//     >
+//       {text}
+//     </Link>
+//   </li>
+// );
 
 export default function Home() {
   return (
