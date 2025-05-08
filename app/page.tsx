@@ -347,7 +347,7 @@ const ServiceCard = ({
   icon: React.ReactNode; 
   title: string; 
   description: string; 
-  variants: any;
+  variants: Record<string, any>;
 }) => {
   return (
     <motion.div
@@ -578,7 +578,7 @@ const Contact = () => {
             <span className="bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">Contactez-nous</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Prêt à transformer votre présence digitale ? Contactez-nous dès aujourd'hui pour discuter de votre projet.
+            Prêt à transformer votre présence digitale ? Contactez-nous dès aujourd&apos;hui pour discuter de votre projet.
           </p>
         </motion.div>
 
@@ -674,7 +674,7 @@ const Contact = () => {
 
                   {formStatus.error && (
                     <div className="bg-red-500/20 border border-red-500 rounded-lg p-4 text-white">
-                      <p>Une erreur s'est produite. Veuillez réessayer.</p>
+                      <p>Une erreur s&apos;est produite. Veuillez réessayer.</p>
                     </div>
                   )}
                   
@@ -866,7 +866,7 @@ const PortfolioCard = ({
   category: string;
   description: string;
   demoLink: string;
-  variants: any;
+  variants: Record<string, any>
 }) => {
   return (
     <motion.div
@@ -1007,7 +1007,7 @@ const Footer = () => {
   );
 };
 
-const FooterLink = ({ text }: { text: string }) => (
+export const FooterLink = ({ text }: { text: string }) => (
   <li>
     <Link 
       href="#" 
