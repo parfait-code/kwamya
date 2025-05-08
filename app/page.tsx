@@ -76,12 +76,12 @@ const Header = () => {
 
 const NavItem = ({ text, href }: { text: string; href: string }) => (
   <li>
-    <a
+    <Link
       href={href}
       className="text-white hover:text-purple-300 transition-colors duration-300"
     >
       {text}
-    </a>
+    </Link>
   </li>
 );
 
@@ -109,13 +109,15 @@ const MobileMenu = () => {
             <MobileNavItem text="Pourquoi nous" href="#why-us" onClick={() => setIsOpen(false)} />
             <MobileNavItem text="Contact" href="#contact" onClick={() => setIsOpen(false)} />
           </ul>
-          <motion.button 
-            whileHover={{ scale: 1.05 }} 
-            whileTap={{ scale: 0.95 }}
-            className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-2 px-6 rounded-full font-medium w-full mt-6"
-          >
-            Nous Contacter
-          </motion.button>
+          <Link href={'#contact'}>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-2 px-6 rounded-full font-medium w-full mt-6"
+            >
+              Nous Contacter
+            </motion.button>
+          </Link>
         </motion.div>
       )}
     </div>
@@ -124,13 +126,13 @@ const MobileMenu = () => {
 
 const MobileNavItem = ({ text, href, onClick }: { text: string; href: string; onClick: () => void }) => (
   <li>
-    <a
+    <Link
       href={href}
       className="text-white hover:text-purple-300 transition-colors duration-300 block"
       onClick={onClick}
     >
       {text}
-    </a>
+    </Link>
   </li>
 );
 
@@ -955,7 +957,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-white text-lg font-semibold mb-6">Services</h4>
+            <h4 className="text-white text-lg font-semibold mb-6">Nos Services</h4>
             <ul className="space-y-3">
               <li className="text-gray-400">Création de Site Web</li>
               <li className="text-gray-400">Responsive Design</li>
@@ -965,7 +967,7 @@ const Footer = () => {
             </ul>
           </div>
           
-          <div>
+          {/* <div>
             <h4 className="text-white text-lg font-semibold mb-6">Entreprise</h4>
             <ul className="space-y-3">
               <FooterLink text="À propos" />
@@ -974,7 +976,7 @@ const Footer = () => {
               <FooterLink text="Témoignages" />
               <FooterLink text="Blog" />
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h4 className="text-white text-lg font-semibold mb-6">Contact</h4>
@@ -1007,12 +1009,12 @@ const Footer = () => {
 
 const FooterLink = ({ text }: { text: string }) => (
   <li>
-    <a 
+    <Link 
       href="#" 
       className="text-gray-400 hover:text-purple-400 transition-colors duration-300"
     >
       {text}
-    </a>
+    </Link>
   </li>
 );
 
