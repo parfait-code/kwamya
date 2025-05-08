@@ -4,8 +4,22 @@ import { useState, useEffect, FormEvent, ReactNode } from "react";
 import Head from "next/head";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ConsultingIcon, EmailIcon, FacebookIcon, InstagramIcon, KwamyaIcon, LinkedInIcon, LocationIcon, Logo, MaintenanceIcon, MenuIcon, MobileIcon, ModernIcon, PhoneIcon, SeoIcon, SocialIcon, SupportIcon, TwitterIcon, UiUxIcon, WebsiteIcon } from "@/components/icones";
+import { ConsultingIcon, EmailIcon, KwamyaIcon, LocationIcon, Logo, MaintenanceIcon, MenuIcon, MobileIcon, ModernIcon, PhoneIcon, SeoIcon, SupportIcon, UiUxIcon, WebsiteIcon } from "@/components/icones";
 import Link from "next/link";
+
+interface ContactItemProps {
+  icon: ReactNode;
+  title: string;
+  info: string;
+}
+
+interface InputFieldProps {
+  type: string;
+  name: string;
+  label: string;
+  placeholder: string;
+  required?: boolean;
+}
 
 // Composants
 const Header = () => {
@@ -691,12 +705,6 @@ const Contact = () => {
   );
 };
 
-interface ContactItemProps {
-  icon: ReactNode;
-  title: string;
-  info: string;
-}
-
 const ContactItem = ({ 
   icon, 
   title, 
@@ -714,14 +722,6 @@ const ContactItem = ({
     </li>
   );
 };
-
-interface InputFieldProps {
-  type: string;
-  name: string;
-  label: string;
-  placeholder: string;
-  required?: boolean;
-}
 
 const InputField = ({ 
   type, 
@@ -931,7 +931,6 @@ const PortfolioCard = ({
   );
 };
 
-// N'oubliez pas d'ajouter ce composant dans la fonction principale Home et d'ajouter un lien dans le menu de navigation
 const Footer = () => {
   return (
     <footer className="bg-gray-900 pt-16 pb-8">

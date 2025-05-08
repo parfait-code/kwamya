@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     "webdesign professionnel Cameroun",
     "agence numérique Yaoundé",
     "création site e-commerce Cameroun",
-    "référencement web africain",
+    "référencement web cameroun",
     "solutions digitales entreprises Cameroun",
     "développeur web Afrique centrale",
     "transformation digitale Cameroun"
@@ -49,7 +49,6 @@ export const metadata: Metadata = {
     canonical: "/",
     languages: {
       "fr-FR": "/fr",
-      "en-US": "/en",
     },
   },
   robots: {
@@ -101,10 +100,6 @@ export const metadata: Metadata = {
     ],
   },
   manifest: "/site.webmanifest",
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#111111" },
-  ],
 };
 
 export default function RootLayout({
