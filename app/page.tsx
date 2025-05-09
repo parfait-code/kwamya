@@ -529,7 +529,7 @@ const LocalizationIcon = () => (
 const StatCard = ({ number, label }: { number: string; label: string }) => {
   return (
     <div className="bg-black/40 backdrop-blur-sm rounded-lg p-4 border border-purple-900/20">
-      <p className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 text-transparent bg-clip-text mb-2">
+      <p className="text-3xl font-bold bg-gradient-to-r from-purple-400 to-indigo-400 dark:bg-gradient-to-r dark:from-purple-400 dark:to-indigo-400 text-transparent bg-clip-text mb-2">
         {number}
       </p>
       <p className="text-gray-400 text-sm">
@@ -597,7 +597,7 @@ const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            <span className="bg-gradient-to-r from-purple-500 to-indigo-500 text-transparent bg-clip-text">Contactez-nous</span>
+            <span className="bg-gradient-to-r from-purple-500 to-indigo-500 dark:bg-gradient-to-r dark:from-purple-500 dark:to-indigo-500 text-transparent bg-clip-text">Contactez-nous</span>
           </h2>
           <p className="text-gray-400 max-w-2xl mx-auto">
             Prêt à transformer votre présence digitale ? Contactez-nous dès aujourd&apos;hui pour discuter de votre projet.
@@ -915,7 +915,7 @@ const PortfolioCard = ({
   return (
     <motion.div
       variants={variants}
-      className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl overflow-hidden border border-gray-700 shadow-xl hover:shadow-purple-900/20 transition-all duration-300 group"
+      className=" mb-4 bg-gradient-to-br from-gray-800 to-gray-900 dark:bg-gradient-to-br dark:from-gray-800 dark:to-gray-900 rounded-xl overflow-hidden border border-gray-700 shadow-xl hover:shadow-purple-900/20 transition-all duration-300 group"
     >
       <div className="relative overflow-hidden h-48">
         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent z-10"></div>
@@ -1071,7 +1071,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main>
+      <main className="bg-gray-900">
         <Header />
         <Hero />
         <Services />
